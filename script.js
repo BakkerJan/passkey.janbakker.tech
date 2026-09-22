@@ -131,6 +131,18 @@ const data = {
         }
       ]
     }
+  ],
+  tools: [
+    {
+      name: "Registration Campaign Nudger",
+      href: "pages/entra-registration-campaign-sim.html",
+      logos: [
+        {
+          src: "assets/logos/janbakkertech-logo.png",
+          alt: "JanBakker.tech logo"
+        }
+      ]
+    }
   ]
 };
 
@@ -188,3 +200,4 @@ buildCards("device-bound-grid", data.deviceBound);
 buildCards("auto-registered-grid", data.autoRegistered);
 buildCards("native-synced-grid", data.nativeSynced);
 buildCards("commercial-synced-grid", data.commercialSynced);
+buildCards("tools-grid", data.tools);
