@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Microsoft 365 Passkey Guide</title>
+  <meta name="description" content="Explore where Microsoft 365 passkeys can be stored and managed.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero reveal">
+      <h1>Where to store your Microsoft 365 passkey?</h1>
+      <p class="section-note"><a href="https://passkeydeveloper.github.io/passkey-authenticator-aaguids/explorer/?combined">Open the Passkey Authenticator AAGUID Explorer</a></p>
+    </section>
+
+    <section class="columns">
+      <article class="panel reveal" aria-labelledby="device-bound-heading">
+        <h2 id="device-bound-heading">Device-bound</h2>
+        <p class="section-note">Tied to a specific device or hardware authenticator.</p>
+
+        <div class="group">
+          <h3>Core options</h3>
+          <div class="grid" id="device-bound-grid"></div>
+        </div>
+
+        <div class="group">
+          <h3>Auto-registered passkeys</h3>
+          <div class="grid" id="auto-registered-grid"></div>
+        </div>
+      </article>
+
+      <article class="panel reveal" aria-labelledby="synced-heading">
+        <h2 id="synced-heading">Synced</h2>
+        <p class="section-note">Managed and available across multiple signed-in devices.</p>
+
+        <div class="group">
+          <h3>Native (free)</h3>
+          <div class="grid" id="native-synced-grid"></div>
+        </div>
+
+        <div class="group">
+          <h3>Commercial offerings</h3>
+          <div class="grid" id="commercial-synced-grid"></div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

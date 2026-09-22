@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Windows Hello | Microsoft 365 Passkey Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="../index.html">&larr; Back to overview</a>
+
+    <article class="topic">
+      <h1>Windows Hello</h1>
+      <p><strong>Category:</strong> Device-bound</p>
+      <p>Windows Hello provides a device-bound sign-in experience with biometrics or PIN and is central to Microsoft's passwordless strategy on Windows.</p>
+
+      <section class="tech-card">
+        <h2>Technical details</h2>
+        <p class="tech-note">Windows Hello has multiple authenticator variants with different key storage characteristics. If you're building allow lists, treat them as separate AAGUIDs.</p>
+        <ul class="tech-list">
+          <li>
+            <span class="tech-label">Windows Hello Hardware Authenticator</span>
+            <span class="tech-code">08987058-cadc-4b81-b6e1-30de50dcbe96</span>
+            <button class="copy-button" type="button" data-copy-value="08987058-cadc-4b81-b6e1-30de50dcbe96">Copy</button>
+            <span class="tech-note">Private key stored in a hardware-based TPM.</span>
+          </li>
+          <li>
+            <span class="tech-label">Windows Hello VBS Hardware Authenticator</span>
+            <span class="tech-code">9ddd1817-af5a-4672-a2b9-3e3dd95000a9</span>
+            <button class="copy-button" type="button" data-copy-value="9ddd1817-af5a-4672-a2b9-3e3dd95000a9">Copy</button>
+            <span class="tech-note">Virtualization-based Security (VBS) uses hardware virtualization and the Windows hypervisor to store private keys in the host machine's TPM.</span>
+          </li>
+          <li>
+            <span class="tech-label">Windows Hello Software Authenticator</span>
+            <span class="tech-code">6028b017-b1d4-4c02-b4b3-afcdafc96bb2</span>
+            <button class="copy-button" type="button" data-copy-value="6028b017-b1d4-4c02-b4b3-afcdafc96bb2">Copy</button>
+            <span class="tech-note">Private key stored in a software-based TPM.</span>
+          </li>
+        </ul>
+      </section>
+
+      <h2>Microsoft documentation</h2>
+      <ul class="link-list">
+        <li><a href="https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-entra-passkeys-on-windows#supported-windows-hello-passkey-aaguids">Supported Windows Hello passkey AAGUIDs</a></li>
+      </ul>
+    </article>
+  </main>
+  <script src="page-tools.js"></script>
+</body>
+</html>
+
