@@ -86,14 +86,16 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
+  gap: 0.65rem;
+  min-height: 52px;
+  padding: 0.55rem 0.8rem;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
   backdrop-filter: blur(8px);
   transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+  text-decoration: none;
 }
 
 .hero-tool-link:hover {
@@ -104,9 +106,19 @@ a {
 
 .hero-tool-link img {
   display: block;
-  width: 34px;
-  height: 34px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
+}
+
+.hero-tool-link span {
+  display: inline-block;
+  max-width: 18ch;
+  color: #f8fbff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: left;
 }
 
 .hero::before,
@@ -501,14 +513,20 @@ footer {
   }
 
   .hero-tool-link {
-    width: 46px;
-    height: 46px;
+    min-height: 46px;
+    padding: 0.5rem 0.65rem;
     border-radius: 12px;
+    gap: 0.5rem;
   }
 
   .hero-tool-link img {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .hero-tool-link span {
+    max-width: 14ch;
+    font-size: 0.76rem;
   }
 
   .hero {
