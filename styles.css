@@ -81,8 +81,15 @@ a {
   z-index: 1;
 }
 
-.hero-tool-link {
+.hero-actions {
   flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+}
+
+.hero-tool-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -510,6 +517,10 @@ footer {
 
   .hero-topbar {
     align-items: center;
+  }
+
+  .hero-actions {
+    gap: 0.5rem;
   }
 
   .hero-tool-link {
