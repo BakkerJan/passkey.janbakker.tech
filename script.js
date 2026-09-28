@@ -41,6 +41,7 @@ const data = {
     },
     {
       name: "Windows Hello",
+      subtitle: "Entra passkey on Windows",
       href: "pages/windows-hello.html",
       logos: [
         {
@@ -178,6 +179,7 @@ function buildCards(targetId, items) {
         <a class="card-link" href="${item.href}">
           ${renderLogos(item)}
           <h4>${item.name}</h4>
+          ${item.subtitle ? `<p class="card-subtitle">${item.subtitle}</p>` : ""}
         </a>
       `
     )
