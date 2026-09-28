@@ -47,13 +47,16 @@
         <h2>Context</h2>
         <ul class="tech-list">
           <li>
-            <span class="tech-note">Windows Hello passkeys are focused on local, device-bound credentials, with key protection tied to platform security capabilities like TPM and VBS.</span>
+            <span class="tech-label">What it is</span>
+            <span class="tech-note">Microsoft Entra passkeys on Windows are device-bound passkeys stored in the Windows Hello container and used with Windows Hello verification (face, fingerprint, or PIN). They expand phishing-resistant sign-in to Windows devices, including devices that are not Entra-joined or enrolled.</span>
           </li>
           <li>
-            <span class="tech-note">Operationally, treat Windows Hello as an endpoint-dependent option: user experience and available authenticator variant can differ by hardware and Windows security configuration.</span>
+            <span class="tech-label">Who it is for</span>
+            <span class="tech-note">Best fit for users outside a single managed-device model: guest users, multi-tenant users, BYOD/shared device users, and admins/consultants working across multiple tenants. It is complementary to Windows Hello for Business, not a replacement.</span>
           </li>
           <li>
-            <span class="tech-note">Recent Microsoft 365 Message Center communication highlights that passkey experiences on Windows are evolving, so tenant rollout state and end-user readiness guidance remain important.</span>
+            <span class="tech-label">Remarks</span>
+            <span class="tech-note">This capability is public preview and opt-in. Passkeys are per-device and per-account (no sync), and users can register multiple Entra accounts on one device. Registration for an account can be blocked if a Windows Hello for Business credential already exists for that same account/container. During preview, tenant configuration should allow Passkeys (FIDO2), disable attestation enforcement, allow Windows Hello AAGUIDs, and confirm Conditional Access/authentication strengths include passkeys.</span>
           </li>
         </ul>
       </section>
