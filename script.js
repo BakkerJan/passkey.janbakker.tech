@@ -12,6 +12,7 @@ const data = {
     },
     {
       name: "FIDO2 Hardware Device",
+      subtitle: "Like Yubikeys",
       href: "pages/fido2-hardware-key.html",
       logos: [
         {
